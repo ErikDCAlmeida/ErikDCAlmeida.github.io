@@ -1,0 +1,73 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(45deg, rgba(228, 126, 30, .9), rgba(50, 14, 180, .9));
+    background-size: auto 2px;
+}
+
+.sectionInfos{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 70vh;
+    height: 85vh;
+    background-image: linear-gradient(45deg, transparent 1px, rgba(0,0,0,.1) 1px);
+    background-size: auto 2px;
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 1px 1px 10px;
+}
+
+.principal a{
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    width: 78%;
+    height: 6vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    margin: -40px;
+}
+
+.principal a:hover{
+    background-color: black;
+    color: white;
+}
+
+.principal a:hover span{
+    transform: scale(1.05);
+}
+
+.principal .titulo{
+    font-size: 35px;
+    font-weight: bold;
+    border: none;
+    width: auto;
+    height: auto;
+
+}
+
+.principal .titulo:hover{
+    background-color: transparent;
+    color: white;
+    border-bottom: 2px solid black;
+    border-radius: 2px;
+}
