@@ -10,7 +10,8 @@ body{
 }
 
 .sectionInfos{
-    height: 100vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,30 +22,44 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 70vh;
-    height: 85vh;
+    width: 40%;
     background-image: linear-gradient(45deg, transparent 1px, rgba(0,0,0,.1) 1px);
     background-size: auto 2px;
     border-radius: 50px;
+    border: 3px solid black;
+    box-shadow: 0px 0px 10px;
+}
+
+.principal .cabecalho{
+    padding-top: 10px;
+    width: 90%;
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.principal .classificacao{
+    padding-top: 10px;
+    width: 80%;
+    margin-bottom: 10px;
+}
+
+.principal .projeto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     border: 2px solid black;
-    box-shadow: 1px 1px 10px;
+    border-radius: 20px;
+    padding: 10px;
+    width: 80%;
+    margin-bottom: 30px;
+    box-shadow: 0px 1px 4px black;
 }
 
 .principal a{
-    display: inline-block;
-    border: 1px solid black;
-    border-radius: 20px;
     text-decoration: none;
-    font-size: 25px;
-    font-weight: bold;
     color: black;
-    width: 78%;
-    height: 6vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 15px;
-    margin: -40px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .principal a:hover{
@@ -52,22 +67,79 @@ body{
     color: white;
 }
 
-.principal a:hover span{
-    transform: scale(1.05);
-}
-
-.principal .titulo{
+.principal .criador{
     font-size: 35px;
     font-weight: bold;
     border: none;
     width: auto;
-    height: auto;
-
+    margin-top: 50px;
 }
 
-.principal .titulo:hover{
+.principal .criador:hover{
     background-color: transparent;
     color: white;
-    border-bottom: 2px solid black;
-    border-radius: 2px;
+    transform: scale(1.05);
+}
+
+.cabecalho .linha{
+    height: 4px;
+    width: 100%;
+    background-color: black;
+    margin-top: 10px;
+}
+
+#imgTitulo img{
+    width: 28px;
+    height: 28px;
+}
+
+.classificacao .linhaClassificacao{
+    height: 4px;
+    background-color: black;
+    margin-top: 2px;
+}
+
+.cabecalho .titulo{
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+}
+
+.classificacao .nomeClassificacao{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.classificacao .class1{
+    width: 25%;
+}
+
+.classificacao .class2{
+    width: 51%;
+}
+
+.nomeClassificacao{
+    display: flex;
+}
+
+#imghtmlcss img{
+    width: 40px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+#imghtmlcssjs img{
+    width: 66px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.projeto .nomeProjeto{
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.projeto .configs{
+    font-weight: bold;
+    font-size: 18px;
 }
