@@ -2,11 +2,21 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+body::-webkit-scrollbar{
+    background: linear-gradient(135deg, rgba(42, 94, 138, 0.9), rgba(50, 14, 180, 1)); 
+}
+body::-webkit-scrollbar-button{
+    background-color:black;  
+}
+body::-webkit-scrollbar-thumb{
+    background-color: black;
+}
+
 body{
     padding: 0;
     margin: 0;
-    background-image: linear-gradient(45deg, rgba(228, 126, 30, .9), rgba(50, 14, 180, .9));
-    background-size: auto 2px;
+    background: rgb(28, 145, 28);
+    background: linear-gradient(135deg, rgba(2, 253, 35, 0.9), rgba(50, 14, 180, 1));
 }
 
 .sectionInfos{
@@ -67,25 +77,20 @@ body{
     color: white;
 }
 
-.principal .criador{
+.principal .portfolio{
     font-size: 35px;
     font-weight: bold;
     border: none;
     width: auto;
     margin-top: 50px;
-}
-
-.principal .criador:hover{
-    background-color: transparent;
-    color: white;
-    transform: scale(1.05);
+    border-bottom: 3px solid black;
 }
 
 .cabecalho .linha{
     height: 4px;
     width: 100%;
     background-color: black;
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 #imgTitulo img{
@@ -115,7 +120,7 @@ body{
 }
 
 .classificacao .class2{
-    width: 51%;
+    width: 52%;
 }
 
 .nomeClassificacao{
@@ -142,4 +147,51 @@ body{
 .projeto .configs{
     font-weight: bold;
     font-size: 18px;
+}
+
+.infosCriador{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.infosImportantesCriador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 150px;
+}
+
+.imgCriador img{
+    width: 200px;
+    height: 210px;
+    border-radius: 100px;
+    border: 1px solid black;
+    background-color: black;
+    box-shadow: 0px 0px 10px black;
+}
+
+.githubCriador, .linkedinCriador{
+    display: flex;
+    align-items: center;
+}
+
+.imgGithub img, .imgLinkedin img{
+    width: 32px;
+    height: 32px;
+}
+
+.linkGithub a, .linkLinkedin a{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.linkGithub a:hover, .linkLinkedin a:hover{
+    background-color: transparent;
+    color: black;
+    border-bottom: 2px solid black;
+
 }
