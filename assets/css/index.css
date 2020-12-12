@@ -5,9 +5,11 @@
 body::-webkit-scrollbar{
     background: linear-gradient(135deg, rgba(42, 94, 138, 0.9), rgba(50, 14, 180, 1)); 
 }
+
 body::-webkit-scrollbar-button{
     background-color:black;  
 }
+
 body::-webkit-scrollbar-thumb{
     background-color: black;
 }
@@ -32,7 +34,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    width: 40%;
+    width: 800px;
     background-image: linear-gradient(45deg, transparent 1px, rgba(0,0,0,.1) 1px);
     background-size: auto 2px;
     border-radius: 50px;
@@ -116,11 +118,11 @@ body{
 }
 
 .classificacao .class1{
-    width: 25%;
+    width: 150px;
 }
 
 .classificacao .class2{
-    width: 52%;
+    width: 310px;
 }
 
 .nomeClassificacao{
@@ -174,7 +176,7 @@ body{
     box-shadow: 0px 0px 10px black;
 }
 
-.githubCriador, .linkedinCriador{
+.githubCriador a, .linkedinCriador a{
     display: flex;
     align-items: center;
 }
@@ -184,14 +186,62 @@ body{
     height: 32px;
 }
 
-.linkGithub a, .linkLinkedin a{
+.linkGithub, .linkLinkedin{
     font-weight: bold;
     font-size: 20px;
 }
 
-.linkGithub a:hover, .linkLinkedin a:hover{
+.githubCriador a:hover, .linkedinCriador a:hover{
     background-color: transparent;
     color: black;
-    border-bottom: 2px solid black;
+    transform: scale(1.1);
+}
 
+@media (max-width:830px){
+    .principal{
+        width: 500px;
+    }
+
+    body::-webkit-scrollbar{
+        background-color: rgba(50, 14, 180, 1); 
+    }
+}
+
+@media (max-width:530px){
+    .principal{
+        width: 320px;
+    }
+
+    .nomeClassificacao #classif1,
+    .nomeClassificacao #classif2{
+        display: none;
+    }
+
+    .classificacao .class1{
+        width: 60px;
+    }
+
+    .classificacao .class2{
+        width: 90px;
+    }
+
+    #imghtmlcss img{
+        width: 55px;
+        height: 30px;
+    }
+
+    #imghtmlcssjs img{
+        width: 85px;
+        height: 30px;
+    }
+
+    .infosCriador{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 360px){
+    .principal{
+        width: 280px;
+    }
 }
