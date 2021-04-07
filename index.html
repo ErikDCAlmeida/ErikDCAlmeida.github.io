@@ -1,82 +1,269 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/index.css" type="text/css">
-    <title>Projetos ErikDCAlmeida</title>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Portfólio - Erik Danilo</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='./assets/style/index.css'>
+    <link rel="icon" type="imagem/png" href="./assets/images/icon.png" />
+    <script type="module" src='./assets/script/index.js' defer></script>
 </head>
 <body>
-    <section class="sectionInfos">
-        <div class="principal">
-            <div class="portfolio">PORTFÓLIO</div>
-            <div class="cabecalho">
-                <div class="titulo">
-                    <div id="imgTitulo"><img src="./assets/images/ferramentas.png" alt="ferramentas"></div>
-                    <div>PROJETOS</div>
-                </div>
-                <div class="linha"></div>
-            </div>
-            <div class="classificacao">
-                <div class="nomeClassificacao">
-                    <div id="imghtmlcss"><img src="./assets/images/htmlcss.png" alt="logosHTMLCSS"></div>
-                    <div id="classif1">HTML/CSS</div>
-                </div>
-                <div class="linhaClassificacao class1"></div>
-            </div>
-            <a href="https://erikdcalmeida.github.io/Meditacao/" class="projeto" target="_blank">
-                <div class="nomeProjeto">Meditação</div>
-            </a>
-            <a href="https://erikdcalmeida.github.io/AcademiaTHEGYM/" class="projeto" target="_blank">
-                <div class="nomeProjeto">Academia THE GYM</div>
-            </a>
-            <a href="https://erikdcalmeida.github.io/ReplicaRedeSocialMeWe/" class="projeto" target="_blank">
-                <div class="nomeProjeto">Réplica da rede social MeWe</div>
-            </a>
-            <a href="" class="projeto">
-                <div class="nomeProjeto">Em criação...</div>
-            </a>
-            
-            <div class="classificacao">
-                <div class="nomeClassificacao">
-                    <div id="imghtmlcssjs"><img src="./assets/images/htmlcssjs.png" alt="logosHTMLCSS"></div>
-                    <div id="classif2">HTML/CSS/JavaScript</div>
-                </div>
-                <div class="linhaClassificacao class2"></div>
-            </div>
-            <a href="" class="projeto">
-                <div class="nomeProjeto">Em criação...</div>
-            </a>
 
-            <div class="cabecalho">
-                <div class="titulo">
-                    <div id="imgTitulo">
-                        <img src="./assets/images/imgInfo.png" alt="info">
-                    </div>
-                    <div>SOBRE</div>
-                </div>
-                <div class="linha"></div>
+    <!--Códigos para serem clonados-->
+    <div class="itensClonados">
+        <div class="compProjeto">
+            <div class="projeto">
+                <div class="bgProjeto"></div>
             </div>
-            <div class="infosCriador">
-                <div class="imgCriador">
-                    <img src="./assets/images/creator.png" alt="imagemCriador">
+        </div>
+    </div>
+
+
+
+    <div class="menuScreenLeft">
+        <div class="whatsapp" id="wpp">
+            <img src="./assets/images/imgWhatsapp.png" alt="imgWpp" id="wpp"/>
+            <span id="wpp">Whatsapp</span>
+        </div>
+        <div class="linkedin" id="lkd">
+            <img src="./assets/images/imgLinkedin.png" alt="imgLinkedin" id="lkd"/>
+            <span id="lkd">LinkidIn</span>
+        </div>
+        <div class="email" id="email">
+            <img src="./assets/images/imgEmail.jpg" alt="imgEmail" id="email"/>
+            <span id="email">E-mail</span>
+        </div>
+    </div>
+    
+    <header>
+        <div class="container">
+            <div class="itemsHeader">
+                <div class="logoHeader">
+                    <a href="/">
+                        <span style="color: #ff7300;">></span>
+                        <span class="nomeHeader">Portfólio</span>
+                        <span class="barNomeHeader"></span>
+                    </a>
                 </div>
-                <div class="infosImportantesCriador">
-                    <div class="githubCriador">
-                        <a href="https://github.com/ErikDCAlmeida">
-                            <div class="imgGithub"><img src="./assets/images/GitHubLogo.png" alt="GitHub"></div>
-                            <div class="linkGithub">ErikDCAlmeida</div>
-                        </a>
+                <div class="menuMobile">
+                    <div class="menuBar"></div>
+                    <div class="menuBar"></div>
+                    <div class="menuBar"></div>
+                </div>
+                <div class="bgMenu" id="bgMenu">
+                    <div class="menuHeader">
+                        <nav>
+                            <ul>
+                                <a href="#sobre" class="sobLink"><li>Sobre</li></a>
+                                <a href="#formacao" class="forLink"><li>Formação</li></a>
+                                <a href="#habilidades" class="habLink"><li>Habilidades</li></a>
+                                <a href="#projetos" class="projLink"><li>Projetos</li></a>
+                                <a href="#servicos" class="servLink"><li>Serviços</li></a>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="linkedinCriador">
-                        <a href="https://www.linkedin.com/in/erik-almeida-7b7358172/">
-                            <div class="imgLinkedin"><img src="./assets/images/linkedinLogo.png" alt="linkedin"></div>
-                            <div class="linkLinkedin">Erik Almeida</div>
-                        </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="sobre">
+        <div class="container">
+            <div class="areaBannerSobre">
+                <div class="bannerSobre">
+                    <div class="tituloAreaSobre">
+                        <span>.</span>
+                        <span>Sobre</span>
+                    </div>
+                    <div class="areaInfos">
+                        <div class="areaNomeSobre">
+                            <span class="simboloSobre">$</span>
+                            <span class="nomeSobre">Erik Danilo</span>
+                            <span class="barNomeSobre"></span>
+                        </div>
+                        <div class="infoSobre">
+                            Sou estudante de Ciências da Computação na Universidade Tiradentes - UNIT em Aracaju/SE. Atualmente estou focando todo o meu conhecimento para o estudo de Desenvolvimento Web para me tornar futuramente em um Desenvolvedor Web Fullstack, atualmente possuo mais conhecimento na área de Front-end. Aqui você poderá saber mais sobre minhas habilidades de programação e os projetos que eu já criei. Além, é claro, de poder entrar em contato comigo para qualquer motivo, seja ele para tirar dúvidas, trocar conhecimentos, dar dicas, fazer críticas construtivas (as negativas serão ignoradas) e contratação. 😁 
+                        </div>
+                    </div>
+                    <div class="areaImage">
+                        <img src="./assets/images/myImage.png" alt="myImage" />
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <section id="formacao">
+        <div class="container">
+            <div class="areaFormacao">
+                <div class="tituloAreaFormacao">
+                    <span>.</span>
+                    <span>Formação</span>
+                </div>
+                <div class="areasFormacao">
+                    <div class="tecnico">
+                        <div class="bgFormacaoTecnico">
+                            <div class="formacao">
+                                <div class="logoTecnico">
+                                    <img src="./assets/images/ifLogo.png" alt="ifLogo" />
+                                    <span class="nomeImg">Instituto Federal</span>
+                                    <span>Bahia</span>
+                                    <span>Campus Paulo Afonso/BA</span>
+                                </div>
+                                <div class="infosFormacao">
+                                    <span>Técnico de Informática</span>
+                                    <span>Curso em tempo integral concluído em 2016.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bacharel">
+                        <div class="bgFormacaoBacharel">
+                            <div class="formacao">
+                                <div class="logoBacharel">
+                                    <img src="./assets/images/unitLogo.png" alt="ifLogo" />
+                                    <span class="nomeImg">Universidade Tiradentes</span>
+                                    <span>Aracaju/SE</span>
+                                    <span>Campus Farolândia</span>
+                                </div>
+                                <div class="infosFormacao">
+                                    <span>Bacharelado em Ciência da Computação</span>
+                                    <span>Atualmente faculdade trancada, porém com o 6° período completo. Previsão de término do curso em Julho de 2023.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="habilidades">
+        <div class="container">
+            <div class="areaHabilidades">
+                <div class="tituloAreaHabilidades">
+                    <span>.</span>
+                    <span>Habilidades</span>
+                </div>
+                <div class="habilidades">
+                    <div class="design">
+                        <div class="bgDesign">
+                            <div class="areaHabilidadeDesign">
+                                <img src="./assets/images/designLogo.png" alt="imgDesign" />
+                                <span class="tituloDesign">DESIGN</span>
+                                <span>Essas são as ferramentas que eu mais utilizo no meu dia a dia para fazer o design das páginas que crio.</span>
+                                <div class="areaImagesDesign">
+                                    <img src="./assets/images/psLogo.png" alt="psLogo" />
+                                    <img src="./assets/images/figmaLogo.png" alt="figmaLogo" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="frontend">
+                        <div class="bgFrontend">
+                            <div class="areaHabilidadeFrontend">
+                                <img src="./assets/images/webLogo.png" alt="imgDesign" />
+                                <span class="tituloFrontend">FRONT-END</span>
+                                <span>Essas são as ferramentas que eu mais utilizo no meu dia a dia para fazer a criação do Front-end das minhas aplicações.</span>
+                                <div class="areaImagesFrontend">
+                                    <img src="./assets/images/htmlLogo.png" alt="htmlLogo" />
+                                    <img src="./assets/images/cssLogo.png" alt="cssLogo" />
+                                    <img src="./assets/images/jsLogo.png" alt="jsLogo" />
+                                    <img src="./assets/images/reactLogo.png" alt="reactLogo" />
+                                    <img src="./assets/images/vueLogo.png" alt="vueLogo" /> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="backend">
+                        <div class="bgBackend">
+                            <div class="areaHabilidadeBackend">
+                                <img src="./assets/images/backendLogo.png" alt="imgDesign" />
+                                <span class="tituloBackend">BACK-END</span>
+                                <span>Essas são as ferramentas que eu mais uso para criar a parte do Back-end das minhas aplicações.</span>
+                                <div class="areaImagesBackend">
+                                    <img src="./assets/images/nodeLogo.png" alt="nodeLogo">
+                                    <img src="./assets/images/mysqlLogo.png" alt="psLogo" />
+                                    <img src="./assets/images/firebaseLogo.png" alt="figmaLogo" />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projetos">
+        <div class="container">
+            <div class="areaProjetos">
+                <div class="tituloAreaProjetos">
+                    <span>.</span>
+                    <span>Projetos</span>
+                </div>
+                <div class="projetos">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos">
+        <div class="container">
+            <div class="areaServicos">
+                <div class="tituloAreaServicos">
+                    <span>.</span>
+                    <span>Serviços</span>
+                </div>
+                <div class="servicos">
+                    <div class="servico">
+                        <div class="areaImg">
+                            <img src="./assets/images/laptop.png" alt="imgCriacaoSite">
+                        </div>
+                        <div class="areaTit">
+                            <span>Criação de Sites</span>
+                        </div>
+                        <div class="areaDesc">
+                            <span>Desenvolvimento de sites profissionais para suas necessidades, sejam elas sistemas web, blogs, lojas virtuais ou outros.</span>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <div class="areaImg">
+                            <img src="./assets/images/responsive.png" alt="imgSiteResponsivo">
+                        </div>
+                        <div class="areaTit">
+                            <span>Sites Responsivos</span>
+                        </div>
+                        <div class="areaDesc">
+                            <span>Criação de sites que se adequão ao tamanho da tela do usuário.</span>
+                        </div>
+                    </div>
+                    <div class="servico">
+                        <div class="areaImg">
+                            <img src="./assets/images/computer.png" alt="imgUxUi">
+                        </div>
+                        <div class="areaTit">
+                            <span>UX/UI Design</span>
+                        </div>
+                        <div class="areaDesc">
+                            <span>Desenhos de layout baseado nas preferências dos usuários com máximo conforto para quem passa muito tempo de frente a tela.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="areaAgradecimento">
+                <span>Se você chegou até aqui, eu agradeço por ter visualizado esse portfólio!😀</span>
+                <span>Se deseja entrar em contato comigo, use o menu lateral e escolha uma das opções!</span>
+            </div>  
+        </div>
+    </footer>
+
 </body>
 </html>

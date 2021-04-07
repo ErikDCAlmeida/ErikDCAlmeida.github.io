@@ -1,0 +1,783 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto+Mono:wght@300;400&display=swap');
+
+@keyframes animationBar {
+    from, to {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+}
+
+@keyframes  borderBottomMenu{
+    from {
+        border-bottom: 2px solid transparent;
+    }
+    to {
+        border-bottom: 2px solid #ff7300;
+    }
+}
+
+
+.error{
+    background-color: #FF0000;
+    color: #FFF;
+    font-size: 13px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    padding: 3px;
+}
+
+
+
+* {
+    box-sizing: border-box;
+    font-family: "Roboto Mono", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #000;
+    color: #fff;
+}
+
+body::-webkit-scrollbar{
+    background: #000;
+    width: 5px;
+}
+
+
+body::-webkit-scrollbar-button{
+    display: none;
+}
+
+body::-webkit-scrollbar-thumb{
+    background-color: #ff7300;
+}
+
+body::-webkit-scrollbar-corner {
+    color: red;
+}
+
+.itensClonados {
+    display: none;
+}
+
+.menuScreenLeft {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.menuScreenLeft span {
+    display: none;
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.whatsapp,
+.linkedin,
+.email {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    transition: all ease .5s;
+    height: 40px;
+}
+
+.whatsapp {
+    background: #008000;
+    border-radius: 0px 5px 0px 0px;
+}
+
+.whatsapp img,
+.linkedin img,
+.email img {
+    width: 24px;
+}
+
+.linkedin {
+    background: #0A66C2;
+}
+
+.email {
+    background: #fff;
+    color: #000;
+    border-radius: 0px 0px 5px 0px;
+}
+
+header {
+    background: #000;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    box-shadow: 0px 0px 5px 1px #5a5a5a;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.itemsHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoHeader {
+    display: flex;
+    align-items: center;
+    padding: 0px 5px;
+    height: 60px;
+}
+
+.logoHeader span:first-child {
+    font-size: 35px;
+}
+
+.logoHeader a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 30px;
+}
+
+.logoHeader .nomeHeader {
+    margin-right: 5px;
+}
+
+.logoHeader .barNomeHeader {
+    border-right: 2px solid #ff7300;
+    animation: animationBar 1s infinite;
+}
+
+
+.menuMobile {
+    display: none;
+    width: 35px;
+    cursor: pointer;
+}
+
+.menuBar {
+    height: 2px;
+    background: #ff7300;
+    margin-bottom: 7px;
+}
+
+.menuBar:last-child {
+    margin-bottom: 0px;
+}
+
+
+.menuHeader {
+    flex: 1;
+    height: 60px;
+}
+
+.menuHeader ul,
+.menuHeader li {
+    list-style: none;
+}
+
+.menuHeader nav {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.menuHeader ul {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: inherit;
+}
+
+.menuHeader li {
+    margin-bottom: 5px;
+}
+
+.menuHeader a {
+    border-bottom: 2px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 15px;
+    margin-right: 5px;
+    text-decoration: none;
+    color: #ff7300;
+    font-size: 16px;
+}
+
+.barMenu {
+    height: 2px;
+    width: 40px;
+    background: #ff7300;
+}
+
+.menuHeader a:hover {
+    animation: borderBottomMenu 1s;
+    animation-fill-mode: backwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
+.menuHeader .selected {
+    font-weight: 600;
+    border-bottom: 2px solid #ff7300;
+}
+
+.menuHeader a:last-child {
+    margin-right: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Área do Sobre */
+.areaBannerSobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.bannerSobre {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 0px;
+}
+
+.tituloAreaSobre {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    margin-top: 50px;
+    margin-bottom: 30px;
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.tituloAreaSobre span:first-child{
+    color: #ff7300;
+}
+
+.areaInfos {
+    text-align: justify;
+    padding: 30px 10px;
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+
+.areaNomeSobre {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.simboloSobre {
+    color: #ff7300;
+}
+
+.nomeSobre {
+    margin-right: 5px;
+}
+
+.areaNomeSobre .barNomeSobre {
+    border-right: 2px solid #ff7300;
+    animation: animationBar 1s infinite;
+}
+
+.areaImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.areaImage img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px #ff7300;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Área da Formação*/
+.tituloAreaFormacao {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
+}
+
+.tituloAreaFormacao span:first-child{
+    color: #ff7300;
+}
+
+.areasFormacao {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.areasFormacao .tecnico {
+    padding: 50px;
+}
+
+.bgFormacaoTecnico {
+    background: #4eba44aa;
+    padding: 5px;
+    width: 500px;
+}
+
+.formacao {
+    background: #000;
+    padding: 5px;
+    height: 400px;
+    text-align: center;
+}
+
+.logoTecnico {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0px 50px 0px;
+}
+
+.logoTecnico img {
+    width: 110px;
+    margin-bottom: 20px;
+}
+
+.logoTecnico .nomeImg,
+.logoBacharel .nomeImg {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.infosFormacao {
+    display: flex;
+    flex-direction: column;
+}
+
+.infosFormacao span:first-child {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.infosFormacao span:last-child {
+    margin-bottom: 20px;
+}
+
+.areasFormacao .bacharel {
+    padding: 50px;
+}
+
+.bgFormacaoBacharel {
+    background: #074EA2;
+    padding: 5px;
+    width: 500px;
+}
+
+.logoBacharel {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px 0px 50px 0px;
+}
+
+.logoBacharel img {
+    width: 250px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+/*Área de Formação*/
+#habilidades {
+    margin-top: 100px;
+}
+
+.tituloAreaHabilidades {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
+}
+
+.tituloAreaHabilidades span:first-child{
+    color: #ff7300;
+}
+
+.habilidades {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.habilidades .design,
+.habilidades .frontend,
+.habilidades .backend {
+    width: 400px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.habilidades .bgDesign {
+    padding: 5px;
+    background: linear-gradient(45deg, #BA4481, #4034A2);
+}
+
+.habilidades .bgFrontend {
+    padding: 5px;
+    background: linear-gradient(45deg, #387D9E, #4DECD8);
+}
+
+.habilidades .bgBackend {
+    padding: 5px;
+    background: linear-gradient(45deg, #ff0000, #ff7300);
+}
+
+.areaHabilidadeDesign,
+.areaHabilidadeFrontend,
+.areaHabilidadeBackend {
+    background: #000;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    height: 350px;
+}
+
+.areaHabilidadeDesign > img:first-child,
+.areaHabilidadeFrontend > img:first-child,
+.areaHabilidadeBackend > img:first-child {
+    width: 50px;
+}
+
+.areaHabilidadeDesign .tituloDesign,
+.areaHabilidadeFrontend .tituloFrontend,
+.areaHabilidadeBackend .tituloBackend {
+    font-size: 35px;
+    font-weight: 600;
+    letter-spacing: 6px;
+    margin-bottom: 10px;
+}
+
+.areaImagesDesign,
+.areaImagesFrontend,
+.areaImagesBackend {
+    display: flex;
+    margin: 30px 0px 20px 0px;
+}
+
+.areaImagesDesign img,
+.areaImagesFrontend img,
+.areaImagesBackend img {
+    width: 40px;
+    margin-right: 15px;
+}
+
+.areaHabilidadeDesign img:last-child,
+.areaImagesFrontend img:last-child,
+.areaImagesBackend img:last-child {
+    margin-right: 0px;
+}
+
+.areaImagesDesign img:last-child {
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Área de projetos*/
+#projetos {
+    margin-top: 100px;
+}
+
+.areaProjetos {
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloAreaProjetos {
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
+}
+
+.tituloAreaProjetos span:first-child {
+    color: #ff7300;
+}
+
+.projetos {
+    padding: 10px;
+    display: flex;
+    overflow-x: scroll;
+}
+
+.projetos::-webkit-scrollbar{
+    background: #000;
+    height: 10px;
+}
+
+.projetos::-webkit-scrollbar-button{
+    display: none;
+}
+
+.projetos::-webkit-scrollbar-thumb{
+    background-color: #ff7300;
+}
+
+.projeto {
+    background-position: center;
+    background-size: cover;
+    width: 485px;
+    height: 300px;
+    margin-bottom: 20px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.bgProjeto {
+    background: rgba(0, 0, 0, 0.7);
+    height: inherit;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.projeto:hover .bgProjeto {
+    display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*Área dos Serviços*/
+#servicos {
+    margin-top: 150px;
+}
+
+.areaServicos{
+    display: flex;
+    flex-direction: column;
+}
+
+.tituloAreaServicos{
+    font-size: 50px;
+    font-weight: 700;
+    font-family: 'Open Sans';
+    margin-bottom: 30px;
+}
+
+.tituloAreaServicos span:first-child {
+    color: #ff7300;
+}
+
+.servicos {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.servicos img {
+    filter: invert(58%) sepia(99%) saturate(3644%) hue-rotate(1deg) brightness(102%) contrast(109%);
+    width: 65px;
+}
+
+.servico {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 310px;
+    height: 300px;
+    text-align: center;
+}
+
+.servico .areaImg,
+.servico .areaTit {
+    height: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.servico .areaDesc {
+    height: 50%;
+}
+
+
+
+
+
+
+
+
+/*Área do Footer*/
+footer {
+    margin-top: 150px;
+    background: #ff7300;
+}
+
+.areaAgradecimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*Recursão*/
+@media (max-width: 900px) {
+    .tituloAreaSobre {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+    }
+    
+    .areaInfos {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+    }
+    
+    .areaImage {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+}
+
+@media (max-width: 815px) {
+    .itemsHeader {
+        align-items: center;
+        padding: 0px 5px;
+    }
+    .menuMobile {
+        display: block;
+    }
+    .bgMenu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        height: 100vh;
+        width: 100vw;
+    }
+    .menuHeader {
+        width: 260px;
+        height: 100vh;
+        position: inherit;
+        right: 0;
+    }
+    .menuHeader ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        background: #ff7300;
+        padding-left: 0px;
+        padding: 20px 5px;
+    }
+    .menuHeader a {
+        width: 100%;
+        color: #000;
+        margin-bottom: 20px;
+    }
+    .menuHeader .selected {
+        font-size: 18px;
+        border-color: #000;
+    }
+    .areasFormacao .tecnico {
+        padding: 0px;
+        margin-bottom: 50px;
+    }
+
+    .areasFormacao .bacharel {
+        padding: 0px;
+    }    
+}
+
+@media (max-width: 530px) {
+    .areaImage img {
+        width: 300px;
+    }
+    
+    .bgFormacaoTecnico,
+    .bgFormacaoBacharel  {
+        width: 310px;
+    }
+    .formacao {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        justify-content: space-evenly;
+    }
+    .tituloAreaHabilidades span:last-child {
+        font-size: 40px;
+    }
+}
