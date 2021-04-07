@@ -344,7 +344,7 @@ header {
 }
 
 .areasFormacao .tecnico {
-    padding: 50px;
+    padding: 0px 50px 50px 50px;
 }
 
 .bgFormacaoTecnico {
@@ -394,7 +394,7 @@ header {
 }
 
 .areasFormacao .bacharel {
-    padding: 50px;
+    padding: 0px 50px 50px 50px;
 }
 
 .bgFormacaoBacharel {
