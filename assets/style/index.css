@@ -659,6 +659,11 @@ header {
     align-items: center;
 }
 
+.areaTit span{
+    font-size: 18px;
+    color: #ff7300;
+}
+
 .servico .areaDesc {
     height: 50%;
 }
@@ -681,7 +686,12 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 15px 0px;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+.areaAgradecimento span:first-child {
+    margin-bottom: 10px;
 }
 
 
@@ -700,6 +710,7 @@ footer {
     .tituloAreaSobre {
         grid-column: 1 / 4;
         grid-row: 1 / 2;
+        margin-top: 0px;
     }
     
     .areaInfos {
@@ -766,10 +777,9 @@ footer {
     .areaImage img {
         width: 300px;
     }
-    
     .bgFormacaoTecnico,
     .bgFormacaoBacharel  {
-        width: 310px;
+        width: 380px;
     }
     .formacao {
         display: flex;
@@ -779,5 +789,12 @@ footer {
     }
     .tituloAreaHabilidades span:last-child {
         font-size: 40px;
+    }
+}
+
+@media (max-width: 390px) {
+    .bgFormacaoTecnico,
+    .bgFormacaoBacharel  {
+        width: 98%;
     }
 }
