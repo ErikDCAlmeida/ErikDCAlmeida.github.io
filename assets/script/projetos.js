@@ -2,7 +2,7 @@ let projetosJSON = [
   {
     image: "assets/images/imgProjetos/apithemoviedb.png",
     nome: "API The Movie DB",
-    ferramenta: "(html5, css3, vue.js)",
+    ferramenta: "(html5, css3, javascript, vue.js)",
     site: "https://the-movie-db-api-vue.vercel.app",
     color: "#ff0000",
   },
