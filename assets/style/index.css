@@ -171,15 +171,6 @@ header {
     z-index: 10;
 }
 
-header::before {
-    content: "";
-    display: inline-block;
-    position: absolute;
-    top: 0px;
-    height: 1px;
-    background: rgba(255, 115, 0, 0.5);
-}
-
 .container {
     width: 100%;
     max-width: 1200px;
