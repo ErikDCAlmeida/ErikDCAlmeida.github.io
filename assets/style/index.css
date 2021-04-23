@@ -169,7 +169,15 @@ header {
     width: 100%;
     top: 0;
     z-index: 10;
-    box-shadow: 0px 0px 5px 1px #5a5a5a;
+}
+
+header::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0px;
+    height: 1px;
+    background: rgba(255, 115, 0, 0.5);
 }
 
 .container {
@@ -248,6 +256,8 @@ header {
     justify-content: flex-end;
     width: 100%;
     height: inherit;
+    margin: 0;
+    padding: 0;
 }
 
 .menuHeader li {
