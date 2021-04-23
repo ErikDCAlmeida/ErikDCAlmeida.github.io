@@ -18,6 +18,52 @@
     }
 }
 
+@keyframes menuOpening {
+    from {
+        width: 0;
+    }
+    to {
+        width: 260px;
+    }
+}
+
+@keyframes menuClosing {
+    from {
+        width: 260px;
+    }
+    to {
+        width: 0;
+    }
+}
+
+@keyframes bgModal {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes aMenu {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes spanLinksSocials {
+    from {
+        transform: translate3d(-20px, 0, 0);
+        opacity: 0;
+    }
+    to {
+        transform: translate3d(0px, 0, 0);
+        opacity: 1;
+    }
+}
 
 .error{
     background-color: #FF0000;
@@ -99,6 +145,12 @@ body::-webkit-scrollbar-corner {
 .linkedin img,
 .email img {
     width: 24px;
+}
+
+.whatsapp span,
+.linkedin span,
+.email span{
+    animation: spanLinksSocials 1s;
 }
 
 .linkedin {
@@ -668,6 +720,9 @@ header {
     height: 50%;
 }
 
+.areaDesc {
+    width: 300px;
+}
 
 
 
@@ -740,6 +795,7 @@ footer {
         background: rgba(0, 0, 0, 0.7);
         height: 100vh;
         width: 100vw;
+        animation: bgModal 1s;
     }
     .menuHeader {
         width: 260px;

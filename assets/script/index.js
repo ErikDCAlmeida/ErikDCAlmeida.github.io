@@ -44,6 +44,9 @@ window.onscroll = function () {
   });
 };
 
+obj(".whatsapp").style.width = "34px";
+obj(".linkedin").style.width = "34px";
+obj(".email").style.width = "34px";
 obj(".menuScreenLeft").addEventListener("mouseover", (e) => {
   if (e.target.id === "wpp") {
     obj(".whatsapp").style.width = "130px";
@@ -124,16 +127,40 @@ projetosJSON.map((item, index) => {
   obj(".projetos").append(projeto);
 });
 
+if (document.body.clientWidth <= 815) {
+  obj(".bgMenu").style.display = "none";
+}
 obj(".menuMobile").addEventListener("click", () => {
   if (obj(".bgMenu").style.display == "none") {
+    obj(".menuHeader").style.animation = "menuOpening .5s";
     obj(".bgMenu").style.display = "block";
   } else {
-    obj(".bgMenu").style.display = "none";
+    objs(".menuHeader a").forEach((item) => {
+      item.style.animation = "aMenu .5s";
+    });
+    obj(".menuHeader").style.animation = "menuClosing .5s";
+    setTimeout(() => {
+      obj(".bgMenu").style.display = "none";
+      obj(".menuHeader").style.animation = "";
+      objs(".menuHeader a").forEach((item) => {
+        item.style.animation = "";
+      });
+    }, 500);
   }
 });
 
 obj(".bgMenu").addEventListener("click", (e) => {
   if (e.target.id === "bgMenu") {
-    obj(".bgMenu").style.display = "none";
+    objs(".menuHeader a").forEach((item) => {
+      item.style.animation = "aMenu .5s";
+    });
+    obj(".menuHeader").style.animation = "menuClosing .5s";
+    setTimeout(() => {
+      obj(".bgMenu").style.display = "none";
+      obj(".menuHeader").style.animation = "";
+      objs(".menuHeader a").forEach((item) => {
+        item.style.animation = "";
+      });
+    }, 500);
   }
 });
