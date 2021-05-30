@@ -7,6 +7,13 @@ let projetosJSON = [
     color: "#ff0000",
   },
   {
+    image: "assets/images/imgProjetos/to-do-list.png",
+    nome: "Your To-Do List",
+    ferramenta: "(html5, css3, javascript, vue.js)",
+    site: "https://your-to-do-list.vercel.app",
+    color: "#0000ff",
+  },
+  {
     image: "assets/images/imgProjetos/meditacao.png",
     nome: "meditação",
     ferramenta: "(html5, css3)",
