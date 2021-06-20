@@ -1,17 +1,24 @@
 let projetosJSON = [
   {
+    image: "assets/images/imgProjetos/github-api.png",
+    nome: "GitHub API",
+    ferramenta: "(html5, scss, javascript, vue.js/vuex)",
+    site: "https://erikdcalmeida-vue-github-api.vercel.app",
+    color: "#fff",
+  },
+  {
+    image: "assets/images/imgProjetos/to-do-list.png",
+    nome: "Your To-Do List",
+    ferramenta: "(html5, css3, javascript, vue.js/vuex)",
+    site: "https://your-to-do-list.vercel.app",
+    color: "#0000ff",
+  },
+  {
     image: "assets/images/imgProjetos/apithemoviedb.png",
     nome: "API The Movie DB",
     ferramenta: "(html5, css3, javascript, vue.js)",
     site: "https://the-movie-db-api-vue.vercel.app",
     color: "#ff0000",
-  },
-  {
-    image: "assets/images/imgProjetos/to-do-list.png",
-    nome: "Your To-Do List",
-    ferramenta: "(html5, css3, javascript, vue.js)",
-    site: "https://your-to-do-list.vercel.app",
-    color: "#0000ff",
   },
   {
     image: "assets/images/imgProjetos/meditacao.png",
